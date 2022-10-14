@@ -3,3 +3,4 @@ include:
   - .prometheus
   - .grafana
   - .isc-dhcp-server
+  - .tftpd-hpa
