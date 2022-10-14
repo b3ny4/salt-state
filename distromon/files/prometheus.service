@@ -1,0 +1,12 @@
+[Unit]
+Description=The Prometheus Server
+After=network.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/local/prometheus/prometheus --config.file=/usr/local/prometheus/prometheus.yml
+ExecStop=/bin/kill -HUP $MAINPID
+RestartSec=15s
+
+[Install]
+WantedBy=multi-user.target
