@@ -1,3 +1,5 @@
 base:
   '*':
     - base
+  'distromon':
+    - distromon
