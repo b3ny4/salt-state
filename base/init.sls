@@ -1,3 +1,4 @@
 include:
   - .motd
   - .admins
+  - .packages
