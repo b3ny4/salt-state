@@ -1,0 +1,12 @@
+[Unit]
+Description=The node_exporter Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/node_exporter/node_exporter --web.listen-address 127.0.0.1:8080
+Restart=on-fauilure
+RestartSec=15s
+SysLogIdentifier=node_exporter
+
+[Install]
+WantedBy=multi-user.target
