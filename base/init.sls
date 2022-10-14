@@ -1,2 +1,3 @@
 include:
   - .motd
+  - .admins
